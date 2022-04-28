@@ -1,7 +1,6 @@
 "use strict";
 
 let randomNumber = Math.floor(Math.random() * 20) + 1;
-console.log(randomNumber);
 
 let score = 5;
 
@@ -19,7 +18,6 @@ document.querySelector(".guess").addEventListener("keydown", function (event) {
 
 document.querySelector(".check").addEventListener("click", function () {
   const input = Number(document.querySelector(".guess").value);
-  console.log(input);
 
   // When the input is blank
   if (!input) {
@@ -67,7 +65,6 @@ document.querySelector(".check").addEventListener("click", function () {
 document.querySelector(".again").addEventListener("click", function () {
   score = 5;
   randomNumber = Math.floor(Math.random() * 20) + 1;
-  console.log(randomNumber);
 
   message.textContent = "Start guessing...";
   scoreText.textContent = score;
